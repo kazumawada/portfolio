@@ -27,4 +27,6 @@ RUN set -ex && \
 # ADD Gemfile $APP_ROOT/Gemfile
 # ADD Gemfile.lock $APP_ROOT/Gemfile.lock
 
+
+#####これコメント解除する必要あるのかな？？？？##########
 # RUN bundle install
