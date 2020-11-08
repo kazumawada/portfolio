@@ -29,4 +29,4 @@ RUN set -ex && \
 
 
 #####これコメント解除する必要あるのかな？？？？##########
- RUN bundle install
+ #RUN bundle install
