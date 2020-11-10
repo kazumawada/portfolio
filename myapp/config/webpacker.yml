@@ -53,8 +53,7 @@ development:
   compile: true
 
   # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules
-  #yearn古いっていうエラーが出たから、falseに変更した。
-  check_yarn_integrity: false
+  check_yarn_integrity: true
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
