@@ -1,21 +1,22 @@
-class UsersController < ApplicationController
-    
-
+module Api
+ module V1
+  class UsersController < ApplicationController
     #全てのユーザーを表示する。
     def index
-        @users = User.paginate(page: params[:page])
+      @users = User.all
+      render json: @users
     end
 
     #特定のユーザーを表示する。   
- 　　def show
-    　@user = User.find(params[:id])
-    　@posts = @user.posts.paginate(page: params[:page])
- 　　end
+#  　　def show
+#     　@user = User.find(params[:id])
+#     　@posts = @user.posts.paginate(page: params[:page])
+#  　　end
 
      #ユーザーを新規作成する
- 　　 def new
-　　　　@user = User.new
-     end
+#  　　 def new
+# 　　　　@user = User.new
+#      end
 
 
      #ユーザーを作成する
@@ -40,4 +41,7 @@ class UsersController < ApplicationController
     end
  
 
+end
+
+end
 end
